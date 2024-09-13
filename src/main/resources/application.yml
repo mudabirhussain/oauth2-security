@@ -1,4 +1,3 @@
-
 spring:
   security:
     oauth2:
@@ -8,8 +7,7 @@ spring:
             client-id: ${GITHUB-OAUTH2-CLIENT-ID}
             client-secret: ${GITHUB-OAUTH2-CLIENT-SECRET}
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
-logging:
-  level:
-    org:
-    springframework:
-      TRACE
+          google:
+            client-id: ${GOOGLE-OAUTH2-CLIENT-ID}
+            client-secret: ${GOOGLE-OAUTH2-CLIENT-SECRET}
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
